@@ -1,0 +1,18 @@
+#1.Use map() to convert [1, 2, 3, 4, 5] into their cubes.
+#2.Use filter() to get only even numbers from [10, 11, 12, 13, 14] .
+#3.Use reduce() from functools to find the product of all elements in [1, 2, 3, 4] .
+
+l=[1, 2, 3, 4, 5]
+cube=lambda x:x*x*x
+A=list(map(cube,l))
+print(A)
+
+l=[1, 2, 3, 4, 5]
+f=lambda x:x%2==0
+A=list(filter(f,l))
+print(A)
+
+from functools import reduce
+l=[1, 2, 3, 4, 5]
+product=lambda a,b:a*b
+print(reduce(product,l))
