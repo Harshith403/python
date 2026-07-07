@@ -1,0 +1,18 @@
+import time
+
+while True:
+    print("please sip some water!")
+    time.sleep(3) 
+
+#using plyer module
+#pip install plyer
+  
+
+
+import time
+from plyer import notification
+
+while True:
+    print("please sip some water!")
+    notification.notify(title="palease drink some water",messag="you need to drink some water")
+    time.sleep(3) 
